@@ -173,13 +173,17 @@ Funding will be focused on
 ## Milestones
 
 ### M1 outputs: What measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
+Phase of a pilot project we aim to release four substandards
 
-### M1 budget allocation
-
-### M1 acceptance criteria
-
-### M1 acceptance evidence
-
+  - freeze and seize:
+  Features:
+    Role based featurs:
+        - Only predefined authorized addresses/roles can mint, force-burn/transfer, freeze/unfreeze. The licensed registrar must have enforceable control to maintain the register's accuracy.
+  - Max minting/supply
+  - kyc/kyb
+  - Event-Triggered Assets
+  
+- Integrate the smart wallet features to utxos platform (
 ### M1 verified mainnet transaction(s)
 
 ### What will you demonstrate at Demo Day?
