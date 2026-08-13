@@ -29,6 +29,8 @@ The solution we are building is integrating a seemless, onboarding platform to u
 ### short video pitch
 - 
 
+## Business case
+
 ### Who is your target market, and what evidence shows real demand/product-market fit?
 our target markets are basically enterprises and companies within and outside the cardano ecosystem interested in trying out and interactimg with the programmable token, decentralized applications which we would expose our functionalities thorugh the `@utxos/sdk` package so they can just integrate to their platforms, 
 
@@ -106,19 +108,53 @@ UTXOS applies the same rigorous approach to wallet infrastructure that made Mesh
 ## Integration
 
 ### Which integration(s) will you leverage?
+- Firstly, we would leverage our time being with time interation with the programmable tokens contract, also two of our developers ontributed to the offchain temasar and Rice, with close follow up with the integrators and contributors on shaping the contract work.
+- we have an offchain ready built but with old comtracts as at this time of writing still yet to have a finalized cip-113 contracts https://github.com/MeshJS/contracts/tree/main/src/programmable-tokens
+- we would also leverage on following the patterns of what has been built already for example this https://github.com/cardano-foundation/cip113-programmable-tokens , https://github.com/cardano-foundation/cip113-programmable-tokens-platform/tree/main/src/substandards 
 
 ### What is the current status and Technology Readiness Level (TRL) of your existing product?
+Actual system proven in operational Environment
 
 ### Please provide details about the Technology Readiness Level selected for your existing product.
+UTXOS as an operational blockchain infrastructure platform that has progressed beyond the prototype and development stage into real-world use. The platform currently provides infrastructure and developer tooling across three blockchain networks; 
+- Cardano,
+- Bitcoin,
+- and spark a l2 on bitcoin network
+
+Our development has been driven by actual developer requirements rather than a purely theoretical roadmap, with new capabilities being developed, tested, deployed, and iterated based on real usage.
+
+This proposal therefore does not fund the creation of UTXOS itself. It extends an already operational infrastructure platform with a new programmable-token capability based on CIP-113.
 
 ### How far along is the integration you're proposing, today?
+Technology demonstrated in relevant environment
 
 ### Please provide details about the Technology Readiness Level selected for your proposed integration.
 
+There is also strong evidence from the wider ecosystem that programmable asset rules can be integrated into higher-level wallet and financial infrastructure which really shows we are the best fit for this. For example, platforms such as Privy https://privy.io/ expose programmable wallet infrastructure, transaction controls, and APIs that allow applications to incorporate programmable rules into asset-management workflows. 
+
+we can also replicate this on cardano using cip-113 with UTXOS by moving to the asset level abstraction which is a perfect match for our wallet as a service infrastructure, and smart wallet management.
+
 ### What is your on-chain architecture, and why is it the right fit for the selected integration(s) and this area of interest's technical requirements?
+
+1. CIP-113 Programmable Token substandard contracts
+The core token rules will be implemented through CIP-113-compatible Aiken validators because the CIP-113 programmable-token implementation is built around Aiken. This allows us to remain aligned with the existing CIP-113 architecture
+
+2. Token Policy & Configuration Layer
+Each programmable token substandards will have an associated configuration and parameters defining the rules governing its lifecycle. Depending on the use case, these parameters are being exposed in a plug-and-play style through our sdk(APIs) and the platform itself.
+
+3. smart wallet integration: as a wallet as a service provider, this part is where we are mostly interested about cause the idea of smart wallet which holds the programmable token can be seemlessly integrated inside utxos, all tools and library already made and working fine.
+
+4. Compliance / Identity Integration: For applicable use cases, the architecture can consume verified KYC/KYB status from Fairway infrastructure whom we've been communicating with months before now, so this translate verification into programmable-token conditions. The verification itself does not need to expose sensitive identity information on-chain; instead, the architecture can use appropriate attestations or verification state as the input to the programmable-token rules.
 
 ### What does this funding enable that wouldn't happen otherwise — and, at a high level, what will it be spent on?
 
+This funding is important for the work that sits between "Yes, it works" and "If so, can developers can safely depend on it?" These contracts control the behavior of assets therefore  security, testing, and operational reliability are critical.
+
+Funding will be focused on
+- Core engineering and integration: completing the integration of CIP-113 contracts and off-chain infrastructure
+- Security and independent review: allocating resources toward professional security review and contract auditing of the programmable token implementation
+- Scalability and operational infrastructure: improving transaction construction, monitoring infrastructure capacity.
+- Contract correctness and testing: developing comprehensive unit, integration, property-based, and end-to-end tests.
 ---
 
 ## Adoption & Fee Target
