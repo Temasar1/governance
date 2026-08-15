@@ -1,12 +1,20 @@
 # Project Catalyst Fund 16 Proposal Template
-Proposal title: - 
-Requested Amount: 200,000 ADA
+## Proposal title:
+- UTXOS Smart Wallet and contract infra for programmable tokens???
+
+## Requested Amount: 
+- 200,000 ADA
+
+## Tagline
+
+
 
 ## Setup
 
 ### Applicant name
 MeshJs/UTXOS.DEV
 ### Submitting as
+Incorporated Entity
 
 ### Supporting links
 - Repository
@@ -24,7 +32,13 @@ No
 
 
 ### What solution are you building, and what specific problem does it solve — for whom?
-The solution we are building is integrating a seemless, onboarding platform to usage of programmable tokens and it's integration to the cardano ecosystem, supporting the cip-113 from cardano foundation, we hope that UTXOS as a wallet infrastructure can easily implement the onboarding through our easy access to the creation of the smart wallets for the programmable tokens itself, which wou;ld take sometime to achieve by the extension or connect wallet service providers, we would create an infrastructure for smart wallets holders and easy accessibility signup and interactions to the programmable tokens, example demo minting of a max supply token same as integrating other programmable tokens substandards
+The solution combines **CIP-113 substandard smart contracts with UTXOS Wallet social-login infrastructure**, allowing applications to create smart wallets through social-login (google, discord, twitter) authentication and immediately construct, sign and submit programmable-token transactions. This removes the friction of requiring users to first connect or configure specialized wallet providers and gives DApps a simpler path to integrating programmable assets.
+
+One of the problems right now is that major non-custodian are yet to implement the smart wallet feature which holds programmable tokens, our wallet infra achieves the same result on the non-custodian part also with a touch of social login authentication which gives us an edge to onboarding users and developers quickly to interact with the programmable tokens, without having to build complex wallet and transaction infrastructure themselves.
+
+The initial infrastructure will support what we call the **Programmable Native Assets (PNA)** with configurable minting, burning, supply limits, transfer controls and administration, alongside Security Programmable Assets (SPA) supporting compliance-oriented capabilities such as KYC and KYB, freeze, seize and force-transfer.
+
+Developers will be able to integrate these capabilities through the SDK and demonstrate flows such as creating a programmable token with minting according to defined rules, transferring it through a smart wallet, and extending the same infrastructur
 
 ### short video pitch
 - 
