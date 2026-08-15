@@ -173,21 +173,44 @@ Funding will be focused on
 ## Milestones
 
 ### M1 outputs: What measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
-Within the three-month milestone, UTXOS will deliver and deploy to Cardano mainnet a reusable CIP-113 Programmable Asset Infrastructure consisting of a generic programmable token lifecycle, an autonomous vesting policy built on top of that lifecycle, and the required UTXOS SDK integration.
 
-Here in details:
-we would deliver two types of programmable tokens lifecycle
-- Programmable Native Asset (PNA)
-- Security programmable Assets (SPA)
+# M1 Deliverables & Budget Allocation
 
-- Programmable native assets
+## 1. Contracts - 40%
 
+- **Programmable Native Asset (PNA):** User, Admin, Owner roles, mint/burn controls, max mint, max supply, blacklist and global pause.
+
+- **Security Programmable Asset (SPA):** Extends PNA with KYC/KYB registry, compliance, verifier roles, freeze, seize, force-transfer and compliance controls.
+
+- Contract on testnet, deployment scripts and on-chain configuration.
+
+## 2. Security & Audit - 30%
+
+- Unit, integration and end-to-end testing.
+
+- Threat modelling and security review.
+
+## 3. Wallet Infrastructure & SDK - 20%
+
+- Social-login auth and smart wallet interactions.
+
+- Programmable asset transaction construction and signing.
+
+- PNA/SPA SDK APIs and on-chain to off-chain state interaction.
+
+## 4. Infrastructure & Documentation - 10%
+
+- Mainnet deployment and contract configuration.
+
+- API documentation, integration guides, release notes and test evidence.
+
+**Total: 100%**
 ---
 
 ## Beyond the Pilot
 
 ### Optional: Voluntary give-back pledge
-### Grant repayment terms and/or treasury revenue share
+N/A
 
 ---
 
