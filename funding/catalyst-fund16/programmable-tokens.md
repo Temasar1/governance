@@ -173,42 +173,14 @@ Funding will be focused on
 ## Milestones
 
 ### M1 outputs: What measurable, tangible deliverables will you complete within the 3-month window to reach mainnet?
-Phase of a pilot project we aim to release four substandards
+Within the three-month milestone, UTXOS will deliver and deploy to Cardano mainnet a reusable CIP-113 Programmable Asset Infrastructure consisting of a generic programmable token lifecycle, an autonomous vesting policy built on top of that lifecycle, and the required UTXOS SDK integration.
 
-  - freeze and seize:
-  Features:
-    Role based featurs:
-        - Only predefined authorized addresses/roles can mint, force-burn/transfer, freeze/unfreeze. The licensed registrar must have enforceable control to maintain the register's accuracy.
-  - Max minting/supply
-  - kyc/kyb
-  - Event-Triggered Assets
-  
-- Integrate the smart wallet features to utxos platform (
-### M1 verified mainnet transaction(s)
+Here in details:
+we would deliver two types of programmable tokens lifecycle
+- Programmable Native Asset (PNA)
+- Security programmable Assets (SPA)
 
-### What will you demonstrate at Demo Day?
-
----
-
-## Adoption Target / M2
-
-### Adoption target at Completion / M2
-
-### M2 milestone outputs
-
-### M2 acceptance criteria
-
-### Evidence of milestone completion
-
-### Adoption summary
-
-### Per-epoch adoption results
-
-### Raw explorer and dashboard links
-
-### Measurement methodology
-
-### Completion video
+- Programmable native assets
 
 ---
 
