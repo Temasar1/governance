@@ -1,18 +1,16 @@
 # Project Catalyst Fund 16 Proposal Template
 ## Proposal title:
-- UTXOS Smart Wallet and contract infra for programmable tokens???
+- UTXOS Smart Wallet and Contract infra for programmable tokens???
 
 ## Requested Amount: 
 - 200,000 ADA
 
 ## Tagline
 
-
-
 ## Setup
 
 ### Applicant name
-MeshJs/UTXOS.DEV
+UTXOS
 ### Submitting as
 Incorporated Entity
 
@@ -36,9 +34,9 @@ The solution combines **CIP-113 substandard smart contracts with UTXOS Wallet so
 
 One of the problems right now is that major non-custodian are yet to implement the smart wallet feature which holds programmable tokens, our wallet infra achieves the same result on the non-custodian part also with a touch of social login authentication which gives us an edge to onboarding users and developers quickly to interact with the programmable tokens, without having to build complex wallet and transaction infrastructure themselves.
 
-The initial infrastructure will support what we call the **Programmable Native Assets (PNA)** with configurable minting, burning, supply limits, transfer controls and administration, alongside Security Programmable Assets (SPA) supporting compliance-oriented capabilities such as KYC and KYB, freeze, seize and force-transfer.
+The initial infrastructure will support what we call the **Programmable Native Assets (PNA)** with configurable minting, burning, supply limits, transfer controls and administration, alongside **Security Programmable Assets (SPA)** supporting compliance-oriented capabilities such as KYC and KYB, freeze, seize and force-transfer.
 
-Developers will be able to integrate these capabilities through the SDK and demonstrate flows such as creating a programmable token with minting according to defined rules, transferring it through a smart wallet, and extending the same infrastructur
+Developers will be able to integrate these capabilities through the SDK and demonstrate flows such as creating a programmable token with minting according to defined rules, transferring it through a smart wallet, and extending the same infrastructure
 
 ### short video pitch
 - 
@@ -96,7 +94,7 @@ Product-market fit drives continued paid usage.
 ### How will you reach and onboard real users — and what evidence backs your channels?
 As infrastructure builders we will reach and onboard real users through direct developer outreach, targeted email campaigns and partnerships with projects preparing for production-scale adoption.
 
-We are also part of CIP-113 Working Group on Telegram together with our dedicated Discord server for UTXOS in mesh discord server filled with over 700 technical builders and executives building dapps, wallets and token infrastructures, also other various discord servers and developer channels, where we can directly identify teams interested in programmable-token infrastructure. Onboarding will be through our tokenization dashboard, Smart Wallets and SDK, supported by integration guides, demos and direct technical assistance with evidence from usage and adoption
+We are also part of CIP-113 Working Group on Telegram together with our dedicated Discord channel for UTXOS in mesh discord server filled with over 700 technical builders and executives building dapps, wallets and token infrastructures, also other various discord servers and developer channels, where we can directly identify teams interested in programmable-token infrastructure. Onboarding will be through our tokenization dashboard, Smart Wallets and SDK, supported by integration guides, demos and direct technical assistance with evidence from usage and adoption
 
 ## Team
 
@@ -201,15 +199,22 @@ Funding will be focused on
 ## Adoption & Fee Target
 
 ### [Integration] — expected transaction count
-10,000 Transactions
+700 Transactions
 
 ### [Integration] — fee target (ADA)
-5000 ADA
+210 ADA
+
 ### How will your product generate genuine usage — who transacts, why, and how often?
 
-### Justify your previously declared targets as reasonable but ambitious enough to be considered valid.
+- The product would generate genuine users through email campaigns, marketing and advertising across the general blockchain ecosystem, also our onramp feature which allows ADA purchase directly with credit card would contribute to the seemless onboarding from other ecosystem, we would also linkup users to bridges like wan-chain or galaxy swap.
 
-### Our plan complies with the Transaction Integrity Standard
+- In cardano, we already have some serious projects like Andamio among others who are always ready to integrate our products.
+
+with the social-login infrastructure our programmable native assets substandards would be much useful to game developers, while security programmable assets would be useful for compliance seekers.
+
+- 210 fees in ADA and 700 transactions targets should be considered ambitious because the cip-113 is a new concept to cardano, in as much as we want to serve old and already aware cardano integrators we believe users would also come from other ecosystem, So it takes some level of technical understanding to get familiar to start using product.
+
+Usage intervals depends on multiple factors like platforms demands but speculatively with the right user experience we expect consistent interval that would match the integrity standard.
 
 ---
 
@@ -219,35 +224,30 @@ Funding will be focused on
 
 # M1 Deliverables & Budget Allocation
 
-## 1. Contracts - 40%
+## 1. Contracts/Substandards 
 
-- **Programmable Native Asset (PNA):** User, Admin, Owner roles, mint/burn controls, max mint, max supply, blacklist and global pause.
+- **Programmable Native Asset (PNA):** User, Admin, Owner roles, mint/burn controls, max mint, max supply, blacklist and global pause, holding limits.
 
 - **Security Programmable Asset (SPA):** Extends PNA with KYC/KYB registry, compliance, verifier roles, freeze, seize, force-transfer and compliance controls.
 
-- Contract on testnet, deployment scripts and on-chain configuration.
+- **Event triggered assets:** Milestone-triggered release, Time/event expiry, bounties unlock, token vesting.
 
-## 2. Security & Audit - 30%
+## 2. Security & Audit
 
 - Unit, integration and end-to-end testing.
-
 - Threat modelling and security review.
 
-## 3. Wallet Infrastructure & SDK - 20%
+## 3. Wallet Infrastructure & SDK
 
 - Social-login auth and smart wallet interactions.
-
 - Programmable asset transaction construction and signing.
+- PNA/SPA and Event triggered SDK APIs and on-chain to off-chain state interaction.
 
-- PNA/SPA SDK APIs and on-chain to off-chain state interaction.
-
-## 4. Infrastructure & Documentation - 10%
+## 4. Infrastructure & Documentation
 
 - Mainnet deployment and contract configuration.
-
 - API documentation, integration guides, release notes and test evidence.
 
-**Total: 100%**
 ---
 
 ## Beyond the Pilot
